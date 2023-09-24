@@ -1,0 +1,336 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* -----Header----- */
+
+#body-header{
+    height: 65vh;
+    opacity: 1;
+    background-image: url(/Basics/macbook\ \ mouse.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* -----Navigation Lists----- */
+
+.navigation{ 
+    list-style-type: none;
+    padding-left:0px ;
+    margin: 0px;
+    text-align: center;   
+}
+
+.navigation li{
+    font-family: sans-serif;
+    display: inline-block;     
+    margin: 8px 25px 0px;   
+    font-size: 1.2rem; 
+    font-weight: 100;     
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: white;    
+}
+
+.nav-list li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+
+.navigation li>a:active{
+    color: red
+}
+
+#name{
+    font-family: sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.11rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 0.5rem;
+}
+
+/* -----social media----- */
+.social-icons li{
+    margin: 0px 7px;
+}
+.social-icons li a i{
+    font-size: 1.6rem;
+    padding: 8px;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(255, 196, 196, 0.5);
+}
+
+/* .social-icons{
+    list-style-type: none;
+    padding-left:0px ;
+    margin: 0px;
+    text-align: center;
+} */
+
+/* .social-icons li{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.social-icons li a{
+    display: inline-block;
+    padding: 4px;
+    border-radius: 16px;
+}
+
+.social-icons li a img{
+    width: 35%;
+    padding: ; 
+    border-radius: 50%;  
+}
+.social-icons li a img:hover{
+    box-shadow: 0px 0px 6px 4px rgba(255, 196, 196, 0.5);
+} */
+
+
+#facebook:hover {
+    color: #2d4373;
+}
+  
+#linkedin:hover {
+    color: #00121c;
+}
+  
+#twitter:hover {
+    color: #55acee;
+}
+  
+#google:hover {
+    color: #c23321;
+}
+  
+#gmail:hover{
+    color: red;
+}
+
+/* -----section----- */
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: rgba(211, 211, 211,0.5);
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+/* -----About----- */
+
+#about{
+    height: auto;
+    width: 100%;
+}
+#my-image{
+    width:14rem;
+    height: 14rem;
+    margin: auto;
+    margin-top: -14vh;
+    border: 1px solid rgba(255, 196, 196, 0.5);
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px rgba(167, 157, 157, 0.5);
+}
+
+#my-image img{
+    width:100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#about p{
+    color: rgb(68, 66, 66);
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
+    line-height:1.4rem ;
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    width: 70%;
+}
+#about p span{
+    color: blue;
+}
+
+/* -----skills----- */
+
+.section-heading{
+    width: 100%;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skills-display{
+    width: 60%;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-progress{   
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 0.8rem;
+    background-color: darkgray;
+    margin: 15px;
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 6px 4px rgba(255, 196, 196, 0.5);
+}
+
+.skill-progress div span{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    /* text-align: center; */
+    margin-left: 25px;
+    padding-top: 5px;
+    
+}
+
+.html{
+    width: 85%;
+    height: 100%;
+    background-color: blue;
+}
+.css{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(114, 247, 5);
+}
+.javascript{
+    width: 75%;
+    height: 100%;
+    background-color: magenta;
+}
+.react{
+    width: 70%;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+.java{
+    width: 75%;
+    height: 100%;
+    background-color: magenta;
+}
+.node{
+    width: 65%;
+    height: 100%;
+    background-color: orangered;
+}
+.mongodb{
+    width: 50%;
+    height: 100%;
+    background-color:cyan ;
+}
+
+/* -----Experience----- */
+.experience{
+    position: relative;
+    width: 75%;
+    height: 75%;
+    /* margin-top: 5vh; */
+    /* border: 2px solid black; */
+}
+.experience-box{
+    position: relative;
+    left: 5%;
+    width: 40%;
+    margin: 5px;
+    /* border: 2px solid black; */
+}
+
+.experience-box:nth-child(2n){
+    left: 55%;
+}
+.experience-box h1{
+    color: blue;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: end;
+}
+.experience-box h2{
+    color: orangered;
+    font-size: 1.8rem;
+    text-align: end;
+    margin-top: -2vh;
+}
+.experience-box h4{
+    color: rgb(116, 107, 103);
+    font-size: 1rem;
+    text-align: end;
+    margin-top: -2.5vh;
+}
+.experience-box p{
+    color: rgb(77, 73, 73);
+    font-size: 1.2rem;
+    text-align: justify;
+    
+}
+.experience-box h1::before{
+    content: "";
+    background-image: url(/Basics/nirmal\ bags_1.jpg);
+    background-size: cover;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 0%;
+}
+
+/* -----experience-divider----- */
+.experience-divider{
+    position: absolute;
+    height: 86%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    left: 50%;
+    top: 5%;    
+}
+.experience-traveller{
+    position: sticky;
+    top: 15%;
+    transform: rotate(90deg);
+    color: darkblue;
+
+}
