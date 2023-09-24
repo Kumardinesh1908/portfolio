@@ -1,0 +1,214 @@
+/* ----Skills---- */
+
+.all-skills {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-bottom: 50px;
+}
+
+.web,
+.skill {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    height: 60px;
+    z-index: 10;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* transform-origin: center; */
+}
+
+.web {
+    height: 7rem;
+    width: 8rem;
+    border-radius: 100px;
+}
+
+#html, #css, #git {
+    width: 100px;
+    border-radius: 50px;
+}
+
+#javascript,
+#firebase,
+#tailwind {
+    width: 200px;
+    border-radius: 50px;
+}
+
+#react,
+#redux {
+    width: 150px;
+    border-radius: 50px;
+}
+
+#context {
+    width: 250px;
+    border-radius: 80px;
+}
+
+/* Define keyframe animations for each skill */
+@keyframes moveHTML {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-240px,0px);
+    }
+}
+
+.animate-html {
+    animation: moveHTML 1s ease-in-out forwards;
+}
+
+@keyframes moveCSS {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, -140px);
+    }
+}
+
+.animate-css {
+    animation: moveCSS 1s ease-in-out forwards;
+}
+
+@keyframes moveJavaScript {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(320px, 0px);
+    }
+}
+
+.animate-javascript {
+    animation: moveJavaScript 1s ease-in-out forwards;
+}
+
+@keyframes moveReact {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, 220px);
+    }
+}
+
+.animate-react {
+    animation: moveReact 1s ease-in-out forwards;
+}
+
+@keyframes moveRedux {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(500px, 180px);
+    }
+}
+
+.animate-redux {
+    animation: moveRedux 1s ease-in-out forwards;
+}
+
+@keyframes moveFirebase {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-430px, -180px);
+    }
+}
+
+.animate-firebase {
+    animation: moveFirebase 1s ease-in-out forwards;
+}
+
+@keyframes moveTailwind {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(350px, -250px);
+    }
+}
+
+.animate-tailwind {
+    animation: moveTailwind 1s ease-in-out forwards;
+}
+
+@keyframes moveContext {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-400px, 200px);
+    }
+}
+
+.animate-context {
+    animation: moveContext 1s ease-in-out forwards;
+}
+
+@keyframes moveGit {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-120px, -300px);
+    }
+}
+
+.animate-git {
+    animation: moveGit 1s ease-in-out forwards;
+}
+
+.empty-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.circle-1 {
+    height: 10rem;
+    width: 15rem;
+}
+
+.circle-2 {
+    height: 18rem;
+    width: 30rem;
+}
+
+.circle-3 {
+    height: 27rem;
+    width: 45rem;
+}
+
+.circle-4 {
+    height: 35rem;
+    width: 65rem;
+}
+
+.circle-5 {
+    height: 43rem;
+    width: 85rem;
+}
+
+

@@ -1,0 +1,271 @@
+
+.solar-system {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.sun {
+    background-color: #ffdd00; /* Yellow sun color */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill {
+    position: absolute;
+    border: 2px solid #fff; /* White border for skills */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#html {
+    background-color: #e44d26; 
+    animation-name: orbit-html;
+}
+
+#css {
+    background-color: #264de4; 
+    animation-name: orbit-css;
+}
+
+ #javascript {
+    background-color: #f7df1e; 
+    animation-name: orbit-javascript;
+}
+
+#react {
+    background-color: #61dafb; 
+    animation-name: orbit-react;
+} 
+
+#redux {
+    background-color: #764abc; 
+    animation-name: orbit-redux;
+}
+
+#firebase {
+    background-color: #ffcb2b; 
+    animation-name: orbit-firebase;
+}
+
+#tailwind {
+    background-color: #2bff2b; /* tailwind color */
+    animation-name: orbit-tailwind;
+}
+
+#context {
+    background-color: #f8cb04; /* context color */
+    animation-name: orbit-context;
+}
+/* Add more styles and animations for other skills */
+
+@keyframes orbit-html {
+    0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+@keyframes orbit-css {
+    0% {
+        transform: rotate(0deg) translateX(-100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+    }
+}
+@keyframes orbit-javascript {
+    0% {
+        transform: rotate(90deg) translateX(150px) rotate(-90deg);
+    }
+    100% {
+        transform: rotate(450deg) translateX(150px) rotate(-450deg);
+    }
+}
+
+@keyframes orbit-react {
+    0% {
+        transform: rotate(90deg) translateX(-150px) rotate(-90deg);
+    }
+    100% {
+        transform: rotate(450deg) translateX(-150px) rotate(-450deg);
+    }
+}
+
+@keyframes orbit-redux {
+    0% {
+        transform: rotate(45deg) translateX(200px) rotate(-45deg);
+    }
+    100% {
+        transform: rotate(405deg) translateX(200px) rotate(-405deg);
+    }
+}
+
+@keyframes orbit-firebase {
+    0% {
+        transform: rotate(45deg) translateX(-200px) rotate(-45deg);
+    }
+    100% {
+        transform: rotate(405deg) translateX(-200px) rotate(-405deg);
+    }
+}
+@keyframes orbit-tailwind {
+    0% {
+        transform: rotate(135deg) translateX(200px) rotate(-135deg);
+    }
+    100% {
+        transform: rotate(495deg) translateX(200px) rotate(-495deg);
+    }
+}
+@keyframes orbit-context {
+    0% {
+        transform: rotate(135deg) translateX(-200px) rotate(-135deg);
+    }
+    100% {
+        transform: rotate(495deg) translateX(-200px) rotate(-495deg);
+    }
+}
+
+
+
+<div class="skills-display">
+<div class="skill-progress">
+    <div class="html">
+        <span> HTML</span>
+    </div>
+</div>
+<div class="skill-progress">
+    <div class="css">
+        <span> CSS</span>
+    </div>
+</div>
+<div class="skill-progress">
+    <div class="javascript">
+        <span> JavaScript</span>
+    </div>
+</div>
+<div class="skill-progress">
+    <div class="react">
+        <span> React</span>
+    </div>
+</div>
+<div class="skill-progress">
+    <div class="java">
+        <span> Java</span>
+    </div>
+</div>
+<div class="skill-progress">
+    <div class="node">
+        <span> Node.js</span>
+    </div>
+</div>
+<div class="skill-progress">
+    <div class="mongodb">
+        <span> MongoDB</span>
+    </div>
+</div>
+</div>
+
+/* .skills-display {
+    width: 60%;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-progress {
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 0.8rem;
+    background-color: darkgray;
+    margin: 15px;
+}
+
+.skill-progress>div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 6px 4px rgba(255, 196, 196, 0.5);
+}
+
+.skill-progress div span {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 25px;
+    padding-top: 5px;
+}
+
+.html {
+    width: 85%;
+    height: 100%;
+    background-color: blue;
+}
+
+.css {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(114, 247, 5);
+}
+
+.javascript {
+    width: 75%;
+    height: 100%;
+    background-color: magenta;
+}
+
+.react {
+    width: 70%;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+
+.java {
+    width: 75%;
+    height: 100%;
+    background-color: magenta;
+}
+
+.node {
+    width: 65%;
+    height: 100%;
+    background-color: orangered;
+}
+
+.mongodb {
+    width: 50%;
+    height: 100%;
+    background-color: cyan;
+} */
+
+.animate-html {
+    animation: skill-html .3s ease-in-out forwards;
+}
+  
+@keyframes skill-html {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
