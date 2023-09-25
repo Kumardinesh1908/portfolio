@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: center;
     height: 85vh;
-    margin-bottom: 50px;
+    margin: 20px 0 20px 0;
+
 }
 
 .web,
@@ -16,42 +17,38 @@
     justify-content: center;
     align-items: center;
     background: black;
+    border-radius: 50px;
     color: white;
-    height: 60px;
+    height: 40px;
     z-index: 10;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* transform-origin: center; */
 }
 
 .web {
-    height: 7rem;
-    width: 8rem;
-    border-radius: 100px;
+    height: 5rem;
+    width: 6rem;
 }
 
 #html, #css, #git {
-    width: 100px;
-    border-radius: 50px;
+    width: 80px;
 }
 
 #javascript,
 #firebase,
 #tailwind {
-    width: 200px;
-    border-radius: 50px;
+    width: 140px;
 }
 
 #react,
 #redux {
-    width: 150px;
-    border-radius: 50px;
+    width: 110px;
 }
 
 #context {
-    width: 250px;
-    border-radius: 80px;
+    width: 160px;
 }
 
 /* Define keyframe animations for each skill */
@@ -60,7 +57,7 @@
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(-240px,0px);
+        transform: translate(-200px,0px);
     }
 }
 
@@ -74,7 +71,7 @@
     }
 
     100% {
-        transform: translate(0px, -140px);
+        transform: translate(0px, -100px);
     }
 }
 
@@ -88,7 +85,7 @@
     }
 
     100% {
-        transform: translate(320px, 0px);
+        transform: translate(240px, 0px);
     }
 }
 
@@ -102,7 +99,7 @@
     }
 
     100% {
-        transform: translate(0px, 220px);
+        transform: translate(0px, 100px);
     }
 }
 
@@ -116,7 +113,7 @@
     }
 
     100% {
-        transform: translate(500px, 180px);
+        transform: translate(330px, 150px);
     }
 }
 
@@ -130,7 +127,7 @@
     }
 
     100% {
-        transform: translate(-430px, -180px);
+        transform: translate(-330px, -150px);
     }
 }
 
@@ -144,7 +141,7 @@
     }
 
     100% {
-        transform: translate(350px, -250px);
+        transform: translate(330px, -150px);
     }
 }
 
@@ -158,7 +155,7 @@
     }
 
     100% {
-        transform: translate(-400px, 200px);
+        transform: translate(-330px, 150px);
     }
 }
 
@@ -172,7 +169,7 @@
     }
 
     100% {
-        transform: translate(-120px, -300px);
+        transform: translate(0px, -260px);
     }
 }
 
@@ -183,32 +180,32 @@
 .empty-circle {
     position: absolute;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 2px solid white;
 }
 
 .circle-1 {
-    height: 10rem;
-    width: 15rem;
+    height: 7rem;
+    width: 12rem;
 }
 
 .circle-2 {
-    height: 18rem;
-    width: 30rem;
+    height: 13rem;
+    width: 25rem;
 }
 
 .circle-3 {
-    height: 27rem;
-    width: 45rem;
+    height: 20rem;
+    width: 38rem;
 }
 
 .circle-4 {
-    height: 35rem;
-    width: 65rem;
+    height: 26rem;
+    width: 55rem;
 }
 
 .circle-5 {
-    height: 43rem;
-    width: 85rem;
+    height: 33rem;
+    width: 75rem;
 }
 
 

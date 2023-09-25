@@ -179,8 +179,6 @@ section:nth-child(2n+1) {
     position: relative;
     width: 75%;
     height: 75%;
-    /* margin-top: 5vh; */
-    /* border: 2px solid black; */
 }
 
 .experience-box {
@@ -188,7 +186,6 @@ section:nth-child(2n+1) {
     left: 5%;
     width: 40%;
     margin: 5px;
-    /* border: 2px solid black; */
 }
 
 .experience-box:nth-child(2n) {
@@ -220,10 +217,11 @@ section:nth-child(2n+1) {
     color: rgb(77, 73, 73);
     font-size: 1.2rem;
     text-align: justify;
-
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
-.experience-box h1::before {
+/* .experience-box h1::before {
     content: "";
     background-image: url(/assests/nirmal\ bags_1.jpg);
     background-size: cover;
@@ -232,7 +230,7 @@ section:nth-child(2n+1) {
     height: 120px;
     position: absolute;
     left: 0%;
-}
+} */
 
 /* -----Experience-divider----- */
 
@@ -251,3 +249,5 @@ section:nth-child(2n+1) {
     transform: rotate(90deg);
     color: darkblue;
 }
+
+/* ----Contact---- */
