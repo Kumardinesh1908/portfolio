@@ -1,0 +1,229 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* -----Header----- */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(/assests/macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* -----Navigation Lists----- */
+
+.navigation {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.navigation li {
+    font-family: sans-serif;
+    display: inline-block;
+    margin: 8px 25px 0px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+
+.navigation li a:active {
+    color: red
+}
+
+#name {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* -----social media----- */
+
+.social-icons li {
+    margin: 0px 10px;
+}
+
+.social-icons li a i {
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(255, 196, 196, 0.5);
+}
+
+#facebook:hover {
+    color: #55acee;
+}
+
+#twitter:hover {
+    color: #55acee;
+}
+
+#google:hover {
+    color: #c23321;
+}
+
+#gmail:hover {
+    color: red;
+}
+
+/* -----section----- */
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n+1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    margin: 10px auto;
+}
+
+.section-heading span {
+    font-size: 45px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* -----About----- */
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#aboutPara {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(68, 66, 66);
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}

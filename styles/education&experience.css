@@ -1,0 +1,112 @@
+/* -----Education and Experience----- */
+
+.box-container {
+    position: relative;
+    width: 75%;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.box:nth-child(2n) {
+    left: 53%;
+    text-align: left;
+}
+
+.box:nth-child(2n) .logo {
+    right: 0px;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    overflow: hidden;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+#south-street-logo {
+    width: 120px;
+    margin-top: -20px;
+}
+
+.designation {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.company-name {
+    margin: 8px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/* ----Divider---- */
+
+.divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+}
+
+.divider .traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+.divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
