@@ -1,19 +1,20 @@
 body {
     margin: 0px;
+    padding: 0px;
     font-family: sans-serif;
-    overflow-x: hidden;
+    font-size: 30px;
 }
 
 /* -----Header----- */
 
 #body-header {
     height: 65vh;
-    opacity: 1;
-    background-image: url(/assests/macbook\ \ mouse.webp);
-    background-position: center;
+    opacity: 0.8;
+    background-image: url(/assests/macbook_mouse.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
+    padding-top: 1.2rem;
 }
 
 /* -----Navigation Lists----- */
@@ -48,26 +49,24 @@ body {
 }
 
 #name {
-    font-family: sans-serif;
-    font-size: 5rem;
-    letter-spacing: 0.11rem;
-    font-weight: 700;
-    color: white;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 20vh;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 /* -----social media----- */
 
 .social-icons li {
-    margin: 0px 7px;
+    margin: 0px 10px;
 }
 
 .social-icons li a i {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 8px;
-    margin-top: 0px;
     border-radius: 50%;
 }
 
@@ -76,11 +75,7 @@ body {
 }
 
 #facebook:hover {
-    color: #2d4373;
-}
-
-#linkedin:hover {
-    color: #00121c;
+    color: #55acee;
 }
 
 #twitter:hover {
@@ -99,14 +94,14 @@ body {
 
 section {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 section:nth-child(2n) {
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: #9e9b9b29;
 }
 
 section:nth-child(2n+1) {
@@ -114,14 +109,14 @@ section:nth-child(2n+1) {
 }
 
 .section-heading {
-    width: 100%;
+    width: auto;
     padding: 20px 10px 10px;
     font-weight: 400;
-    text-align: center;
+    margin: 10px auto;
 }
 
 .section-heading span {
-    font-size: 40px;
+    font-size: 45px;
     color: #2857a4;
     display: inline-block;
     padding-top: 10px;
@@ -133,121 +128,375 @@ section:nth-child(2n+1) {
 #about {
     height: auto;
     width: 100%;
+    position: relative;
 }
 
 #my-image {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     margin: auto;
-    margin-top: -16vh;
-    border: 1px solid rgba(255, 196, 196, 0.5);
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 6px 4px rgba(167, 157, 157, 0.5);
+    margin-top: -17vh;
 }
 
 #my-image img {
     width: 100%;
     height: 100%;
-    margin: auto;
     border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
 }
 
 #aboutPara {
-    margin-top: 6vh;
-    margin-bottom: 4vh;
+    padding: 10px;
     width: 70%;
-}
-
-#about p {
-    color: rgb(68, 66, 66);
+    height: 100%;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
     text-align: justify;
-    word-spacing: 0.1rem;
+    color: rgb(68, 66, 66);
+    line-height: 28px;
+    font-weight: 100;
     font-size: 1.2rem;
-    line-height: 1.6rem;
 }
 
-#about p span {
-    color: blue;
+/* -----Portfolio Section---- */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
 }
 
-/* -----Experience----- */
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
-.experience {
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/* -----Education and Experience----- */
+.box-container {
     position: relative;
     width: 75%;
-    height: 75%;
+    margin-top: 30px;
 }
 
-.experience-box {
+.box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
     position: relative;
     left: 5%;
-    width: 40%;
-    margin: 5px;
+    text-align: right;
 }
 
-.experience-box:nth-child(2n) {
-    left: 55%;
+.box:nth-child(2n) {
+    left: 53%;
+    text-align: left;
 }
 
-.experience-box h1 {
-    color: blue;
-    font-weight: bolder;
-    font-size: 2rem;
-    text-align: end;
+.box:nth-child(2n) .logo {
+    position: absolute;
+    right: 0px;
 }
 
-.experience-box h2 {
-    color: orangered;
+.box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    overflow: hidden;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+#south-street-logo{
+    width: 120px;
+    margin-top: -20px;
+}
+
+.designation {
     font-size: 1.8rem;
-    text-align: end;
-    margin-top: -2vh;
+    margin: 0;
 }
 
-.experience-box h4 {
-    color: rgb(116, 107, 103);
+.company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.35rem;
+}
+
+.duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
     font-size: 1rem;
-    text-align: end;
-    margin-top: -2.5vh;
+    margin-top: 5px;
 }
 
-.experience-box p {
-    color: rgb(77, 73, 73);
-    font-size: 1.2rem;
+.description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
     text-align: justify;
-    margin-top: 20px;
-    margin-left: 10px;
 }
 
-/* .experience-box h1::before {
-    content: "";
-    background-image: url(/assests/nirmal\ bags_1.jpg);
-    background-size: cover;
-    display: inline-block;
-    width: 100px;
-    height: 120px;
-    position: absolute;
-    left: 0%;
-} */
+/* ----Divider---- */
 
-/* -----Experience-divider----- */
-
-.experience-divider {
+.divider {
     position: absolute;
-    height: 86%;
     width: 0;
-    border: 3px dashed #0096fa6b;
+    top: 10%;
     left: 50%;
-    top: 5%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
 }
 
-.experience-traveller {
+.divider .traveller {
     position: sticky;
-    top: 15%;
+    top: 135px;
+    z-index: 2;
+}
+
+.divider i {
     transform: rotate(90deg);
-    color: darkblue;
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
 }
 
 /* ----Contact---- */
+#contact {
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 70px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-container {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-details-info-container span {
+    font-size: 1rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#mail{
+    color: white;
+    text-decoration: none;
+}
+
+#contact-form button:hover #mail{
+    color: #13386fe0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}

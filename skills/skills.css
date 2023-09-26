@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 85vh;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 30px 0;
 
 }
 
@@ -62,7 +62,7 @@
 }
 
 .animate-html {
-    animation: moveHTML 1s ease-in-out forwards;
+    animation: moveHTML 1.5s ease-in-out forwards;
 }
 
 @keyframes moveCSS {
@@ -76,7 +76,7 @@
 }
 
 .animate-css {
-    animation: moveCSS 1s ease-in-out forwards;
+    animation: moveCSS 1.5s ease-in-out forwards;
 }
 
 @keyframes moveJavaScript {
@@ -90,7 +90,7 @@
 }
 
 .animate-javascript {
-    animation: moveJavaScript 1s ease-in-out forwards;
+    animation: moveJavaScript 1.5s ease-in-out forwards;
 }
 
 @keyframes moveReact {
@@ -104,7 +104,7 @@
 }
 
 .animate-react {
-    animation: moveReact 1s ease-in-out forwards;
+    animation: moveReact 1.5s ease-in-out forwards;
 }
 
 @keyframes moveRedux {
@@ -118,7 +118,7 @@
 }
 
 .animate-redux {
-    animation: moveRedux 1s ease-in-out forwards;
+    animation: moveRedux 1.5s ease-in-out forwards;
 }
 
 @keyframes moveFirebase {
@@ -132,7 +132,7 @@
 }
 
 .animate-firebase {
-    animation: moveFirebase 1s ease-in-out forwards;
+    animation: moveFirebase 1.5s ease-in-out forwards;
 }
 
 @keyframes moveTailwind {
@@ -146,7 +146,7 @@
 }
 
 .animate-tailwind {
-    animation: moveTailwind 1s ease-in-out forwards;
+    animation: moveTailwind 1.5s ease-in-out forwards;
 }
 
 @keyframes moveContext {
@@ -160,7 +160,7 @@
 }
 
 .animate-context {
-    animation: moveContext 1s ease-in-out forwards;
+    animation: moveContext 1.5s ease-in-out forwards;
 }
 
 @keyframes moveGit {
