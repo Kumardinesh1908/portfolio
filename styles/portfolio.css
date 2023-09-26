@@ -8,12 +8,12 @@
 }
 
 .portfolio-details-container {
-    max-width: 280px;
+    max-width: 350px;
     margin: 20px;
 }
 
 .portfolio-image {
-    width: 280px;
+    width: 350px;
     height: 280px;
     border-radius: 5%;
     transition: transform 0.3s ease-in-out;
@@ -57,4 +57,5 @@
 .portfolio-details ul{
     margin-top: -15px;
     margin-left: -22px;
+    line-height: 1.4;
 }
